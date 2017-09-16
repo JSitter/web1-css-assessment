@@ -1,0 +1,78 @@
+*{
+    font-family: Helvetica;
+}
+
+thead {
+    color: white;
+    background-color: black;
+}
+
+tr:nth-child(2n){
+    background-color: lightblue;
+}
+
+tr{
+    height: 50px;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    padding: 10px;
+}
+
+td:nth-child(3){
+    text-align: center;
+}
+
+td:nth-child(4){
+    text-align: right;
+}
+
+tbody td:nth-child(2)::before{
+    content: "$ "
+}
+
+tbody td:nth-child(4)::before{
+    content: "$ ";
+}
+
+tbody td:nth-child(3)::before{
+    content: "x ";
+}
+
+tbody td:nth-child(3)::after{
+    content: " =";
+}
+
+tbody td:nth-child()::before{
+    content: "$ "
+}
+
+input[value="submit"]{
+    background-color: green;
+    border: 0px solid;
+    width: 60px;
+    height: 35px;
+    margin: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+input[value="clear"]{
+    background-color: red;
+    border: 0px;
+    width: 60px;
+    height: 35px;
+    margin: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+#shopping-cart{
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+}
